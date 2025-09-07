@@ -1,5 +1,5 @@
-import { AuthProvider } from "../contexts/AuthProvider";
+// import { AuthProvider } from "../contexts/AuthProvider";
 
 export default function HomeLayout({ children }) {
-  return <AuthProvider>{children}</AuthProvider>;
+  return <>{children}</>;
 }
