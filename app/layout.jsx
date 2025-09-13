@@ -15,7 +15,6 @@ import { AntThemeProvider } from "./contexts/ThemeProvider";
 import { ThemeProvider } from "./contexts/DarkModeProvider";
 import { Suspense } from "react";
 import { Spin } from "antd";
-import AppNavbar from "./components/AppNav";
 
 export const lexend = Lexend({
   subsets: ["latin", "latin-ext", "vietnamese"],
@@ -66,7 +65,7 @@ export default function RootLayout({ children }) {
             }
           >
             <ThemeProvider>
-              <AppNavbar />
+              {/* <AppNavbar /> */}
               {children}
             </ThemeProvider>
           </Suspense>

@@ -1,9 +1,13 @@
 .watchface {
-  width: 250px;
+  width: 300px;
   height: 300px;
-  border-radius: 64px;
+  border-radius: 50%;
   overflow: hidden;
-  background: #000000;
+  background-color: black; /* solid black base */
+  background-image: url("/galaxy.svg"); /* stars on top */
+  background-repeat: no-repeat;
+  background-size: cover; /* scale to fill */
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,19 +22,20 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(6, 90px); /* 6 bubbles per row */
-  grid-auto-rows: 60px; /* consistent row height */
+  grid-template-columns: repeat(6, 100px); /* 6 bubbles per row */
+  grid-auto-rows: 70px; /* consistent row height */
   gap: 0px; /* smaller spacing */
 }
 
 .icon {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
+  background-color: azure;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   transition: transform 0.2s;
 }
 
